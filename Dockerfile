@@ -1,5 +1,5 @@
 # Docker file to run Hawakening game server
-FROM ubuntu:22.04
+FROM ubuntu:24.04
 
 # Install dependencies
 RUN apt-get update && apt-get install -y wget curl p7zip-full wine software-properties-common gnupg2 xvfb cabextract && apt-get clean
