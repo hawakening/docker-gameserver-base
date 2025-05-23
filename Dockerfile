@@ -2,7 +2,7 @@
 FROM ubuntu:24.04
 
 # Install dependencies
-RUN apt-get update && apt-get install -y wget curl p7zip-full wine software-properties-common gnupg2 xvfb cabextract && apt-get clean
+RUN apt-get update && apt-get install -y wget curl p7zip-full wine software-properties-common gnupg2 xvfb cabextract gettext && apt-get clean
 
 # Add 32-bit architecture & 32-bit wine
 RUN dpkg --add-architecture i386 && apt-get update && apt-get install -y wine32 && apt-get clean
